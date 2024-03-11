@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stefan Kratz">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
     <meta name="description" content="Meine erste HTML Datei">
     <title>Meine Website</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Stefan Kratz</h1>
         <p>Diplomdesigner</p>
+        <nav>
+            <a href="#Profil">Profil</a>
+            <a href="#Erfahrungen">Erfahrungen</a>
+            <a href="#Fähigkeiten - Skills">Fähigkeiten - Skills</a>
+            <a href="#Kontakt">Kontakt</a>
+        </nav>
     </header>
-    <main>
-        <article>
+    <main class="main">
+        <article id="Profil">
             <h2>Profil</h2>
             <p>Hallo<br>
                 meine Name ist Stefan und ich bin 33 Jahre alt. Ich mag kreatives Arbeiten Erweitere meine Erfahrungen
                 gerade um Programmierkenntnisse</p>
+
         </article>
-        <article>
+        <article id="Erfahrungen">
             <h2>Erfahrungen</h2>
             <section>
                 <h3>freischaffender Künstler</h3>
@@ -38,23 +47,35 @@
                     debitis inventore perferendis totam excepturi cupiditate!</p>
             </section>
         </article>
-        <article>
+        <article id="Fähigkeiten - Skills">
             <h2>Fähigkeiten - Skills</h2>
             <section>
                 <h3>Soziale Kompetenzt - Soft Skills</h3>
+                <ul>
+                    <li>feundlich</li>
+                    <li>pünktlich</li>
+                    <li>kreativ</li>
+                </ul>
             </section>
             <section>
                 <h3>Technische Fähigkeiten - Technical Skills</h3>
+                <ul>
+                    <li>HTML und CSS</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Indesign</li>
+                    <li>Adobe Illustrator</li>
+                </ul>
             </section>
         </article>
-        <article>
+        <article id="Kontakt">
             <h2>Kontakt</h2>
-            <p>
-            <address>Stefan Kratz<br>
-                Musterstraße<br>
-                Musterort
-            </address>
-            </p>
+            <ol>
+                <li> Stefan Kratz</li>
+                <li>Musterstraße</li>
+                <li>Musterort</li>
+                <li>Email: <a href="mailto:kratz.stefan@icloud.com">kratz.stefan@icloud.com</a></li>
+                <li>Telefon: <a href="tel:+4915774936373">Telefonnummer</a></li>
+            </ol>
         </article>
     </main>
 </body>
